@@ -20,9 +20,12 @@ DevOps UPT TIK Universitas Pendidikan Ganesha 16 Desember 2020.
 	* [🗔 Windows](#-windows-1)
 		* [Menggunakan Windows Subsystem for Linux 2](#menggunakan-windows-subsystem-for-linux-2)
 * [👩‍💻 Text Editor Setup](#-text-editor-setup)
-* [📃 Docker Snippet](#-docker-snippet)
+	* [Visual Studio Code](#visual-studio-code)
+	* [(N)Vim](#nvim)
+* [📃 Code Snippet](#-code-snippet)
 
 <!-- vim-markdown-toc -->
+
 ## 🌿 Installasi Git
 
 ### 🐧 Linux
@@ -124,10 +127,10 @@ Untuk pemula saya merekomendasikan Anda menggunakan [Ubuntu](https://aka.ms/wsls
 
 ## 👩‍💻 Text Editor Setup
 
-Text editor paling mudah dan kaya fitur yang bisa Anda gunakan adalah Visual
-Studio Code.
+### Visual Studio Code
 
-Install Visual Studio Code sesuai dengan sistem operasi yang Anda gunakan 
+Text editor paling mudah dan kaya fitur yang bisa Anda gunakan adalah Visual
+Studio Code. Install Visual Studio Code sesuai dengan sistem operasi yang Anda gunakan 
 melalui [link berikut](https://code.visualstudio.com/download).
 
 Lanjutkan dengan menginstall plugin Visual Studio Code berikut  ini:
@@ -142,9 +145,14 @@ Untuk bekerja dengan Docker dalam WSL
 5. [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 Untuk bekerja dengan remote code via SSH  
 
+### (N)Vim
+
+Neovim/Vim adalah text editor yang tidak mudah digunakan. Anda menggunakannya? 
+Mari berteman 😉. Anda bisa melihat dotfiles [saya di sini](https://github.com/budasuyasa/dotfile).
+
 ---
 
-## 📃 Docker Snippet
+## 📃 Code Snippet
 
 
 
