@@ -7,8 +7,22 @@ DevOps UPT TIK Universitas Pendidikan Ganesha 16 Desember 2020.
 
 ## 📄 Daftar Isi
 
-[[toc]]
 
+<!-- vim-markdown-toc GFM -->
+
+* [🌿 Installasi Git](#-installasi-git)
+	* [🐧 Linux](#-linux)
+	* [🍎 MacOS](#-macos)
+	* [🗔 Windows](#-windows)
+* [🐳 Installasi Docker](#-installasi-docker)
+	* [🐧 Linux](#-linux-1)
+	* [🍎 MacOS](#-macos-1)
+	* [🗔 Windows](#-windows-1)
+		* [Menggunakan Windows Subsystem for Linux 2](#menggunakan-windows-subsystem-for-linux-2)
+* [👩‍💻 Text Editor Setup](#-text-editor-setup)
+* [📃 Docker Snippet](#-docker-snippet)
+
+<!-- vim-markdown-toc -->
 ## 🌿 Installasi Git
 
 ### 🐧 Linux
