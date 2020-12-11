@@ -13,16 +13,16 @@ DevOps UPT TIK Universitas Pendidikan Ganesha 16 Desember 2020.
 * [🌿 Installasi Git](#-installasi-git)
 	* [🐧 Linux](#-linux)
 	* [🍎 MacOS](#-macos)
-	* [🗔 Windows](#-windows)
+	* [🏠 Windows](#-windows)
 * [🐳 Installasi Docker](#-installasi-docker)
 	* [🐧 Linux](#-linux-1)
 	* [🍎 MacOS](#-macos-1)
-	* [🗔 Windows](#-windows-1)
+	* [🏠 Windows](#-windows-1)
 		* [Menggunakan Windows Subsystem for Linux 2](#menggunakan-windows-subsystem-for-linux-2)
 * [👩‍💻 Text Editor Setup](#-text-editor-setup)
 	* [Visual Studio Code](#visual-studio-code)
 	* [(N)Vim](#nvim)
-* [📃 Code Snippet](#-code-snippet)
+* [📝 Docker Cheatsheet](#-docker-cheatsheet)
 
 <!-- vim-markdown-toc -->
 
@@ -56,7 +56,7 @@ $ brew install git
 Jika Anda menggunakan distribusi selain Debian/Ubuntu atau turunannya, silahkan
 sesuaikan dengan package manager dari distribusi tersebut.
 
-### 🗔 Windows
+### 🏠 Windows
 
 Anda bisa mengunduh Git untuk windows melalui [link ini](https://git-scm.com/download/win).
 
@@ -88,7 +88,7 @@ Docker tersedia untuk sistem operasi MacOs, Anda bisa Anda bisa mengunduuh
 Docker untuk MacOS pada halaman [berikut ini](https://hub.docker.com/editions/community/docker-ce-desktop-macm).
 
 
-### 🗔 Windows 
+### 🏠 Windows 
 
 Silahkan download Docker Desktop untuk Windows melalui [halaman ini](https://hub.docker.com/editions/community/docker-ce-desktop-windowsm).
 
@@ -147,12 +147,31 @@ Untuk bekerja dengan remote code via SSH
 
 ### (N)Vim
 
-Neovim/Vim adalah text editor yang tidak mudah digunakan. Anda menggunakannya? 
-Mari berteman 😉. Anda bisa melihat dotfiles [saya di sini](https://github.com/budasuyasa/dotfile).
+Vim adalah text editor yang sangat cocok digunakan untuk mengedit configuration 
+file. Sebagai opsi, saya sangat menyarankan Anda menginsall [CoC.nvim](https://github.com/neoclide/coc.nvim) 
+dengan extentsion berikut:
+
+1. coc-yaml
+2. coc-docker
+3. coc-git
 
 ---
 
-## 📃 Code Snippet
+## 📝 Docker Cheatsheet
 
+Menampilkan daftar image
+```console
+$ docker images ls
+```
+
+Menampilkan daftar container yang sedang berjalan.
+```console
+$ docker container ls
+```
+
+Menampilkan semua container dalam registry
+```console
+$ docker container ls -a
+```
 
 
