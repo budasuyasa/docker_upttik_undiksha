@@ -18,11 +18,15 @@ DevOps UPT TIK Universitas Pendidikan Ganesha 16 Desember 2020.
 	* [🐧 Linux](#-linux-1)
 	* [🍎 MacOS](#-macos-1)
 	* [🏠 Windows](#-windows-1)
+		* [Via Virtual Machine](#via-virtual-machine)
 		* [Menggunakan Windows Subsystem for Linux 2](#menggunakan-windows-subsystem-for-linux-2)
 * [👩‍💻 Text Editor Setup](#-text-editor-setup)
 	* [Visual Studio Code](#visual-studio-code)
 	* [(N)Vim](#nvim)
 * [📝 Docker Cheatsheet](#-docker-cheatsheet)
+	* [Image](#image)
+	* [Container](#container)
+	* [docker-compose](#docker-compose)
 
 <!-- vim-markdown-toc -->
 
@@ -90,11 +94,20 @@ Docker untuk MacOS pada halaman [berikut ini](https://hub.docker.com/editions/co
 
 ### 🏠 Windows 
 
-Silahkan download Docker Desktop untuk Windows melalui [halaman ini](https://hub.docker.com/editions/community/docker-ce-desktop-windowsm).
+#### Via Virtual Machine
+
+1. Install [Virtual Box](https://www.virtualbox.org/wiki/Downloads) atau [VMWare ](https://my.vmware.com/en/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/16_0) 
+pada komputer Windows Anda. 
+2. Install salah satu guest OS dalam virtual machine dengan distro Linux yang 
+familiar dengan Anda. Misalkan [Ubuntu Server](https://ubuntu.com/donwload/server) atau [CentOS](https://www.centos.org/download/)
+3. Saat instalasi guest OS pada virtual machine, pastikan Anda menginstall
+dan mengaktifkan SSH Server.
+4. Lanjutkan instalasi Docker dengan mengikuti langkah [instalasi Docker pada Linux](#-linux-1).
 
 #### Menggunakan Windows Subsystem for Linux 2
 
-Jika Anda menggunakan Windows 10 versi 2004 Anda bisa menikmati integraasi Docker dengan
+
+Jika Anda menggunakan Windows 10 versi 2004 Anda bisa menikmati integrasi Docker dengan
 Windows Subsystem for Linux 2. Ikuti langkah-langkah berikut untuk mengaktifkan WSL2.
 
 1. Aktifkan Windows Subsystem for Linux. Buka **Powershell** sebagai (Open as Administrator) 
@@ -121,7 +134,7 @@ Administrator dan jalankan perintah berikut:
 5. Install salah satu distribusi Linux yang Anda inginkan melalui [Microsoft Store](https://aka.ms/wslstore) .
 Untuk pemula saya merekomendasikan Anda menggunakan [Ubuntu](https://aka.ms/wslstore).
 6. Install Windows Terminal dan jalankan distribusi Linux yang Anda sudah Anda install.
-7. Ikuti kembali langkah instalasi Docker pada sistem operasi Linux di atas.
+7. Silahkan download Docker Desktop untuk Windows melalui [halaman ini](https://hub.docker.com/editions/community/docker-ce-desktop-windowsm).
 
 ---
 
@@ -159,19 +172,59 @@ dengan extentsion berikut:
 
 ## 📝 Docker Cheatsheet
 
-Menampilkan daftar image
+### Image
+
+Menampilkan daftar image:
 ```console
 $ docker images ls
 ```
 
-Menampilkan daftar container yang sedang berjalan.
+### Container
+
+Menampilkan daftar container yang sedang berjalan:
 ```console
 $ docker container ls
 ```
 
-Menampilkan semua container dalam registry
+Menampilkan semua container dalam registry:
 ```console
 $ docker container ls -a
+```
+
+Menampilkan log container:
+```console
+$ docker logs {nama_container}
+```
+
+Menampilkan statistik container:
+```console
+$ docker stats {nama_container}
+```
+
+### docker-compose
+
+Menjalankan container:
+
+```console
+$ docker-compose up -d {nama_service_1} {nama_service_2} {nama_service_n}
+```
+
+Menjalankan container dengan mode detach (background).
+
+```console
+$ docker-compose up -d {nama_service_1} {nama_service_2} {nama_service_n}
+```
+
+Menjalankan container dengan mode detach (background) dan rebuild.
+
+```console
+$ docker-compose up -d --build {nama_service_1} {nama_service_2} {nama_service_n}
+```
+
+Menghentikan container yang sedang berjalan:
+
+```console
+$ docker-compose stop {nama_service_1} {nama_service_2} {nama_service_n}
 ```
 
 
